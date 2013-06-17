@@ -1,11 +1,11 @@
 from django.http import HttpResponse, HttpResponseRedirect
-from django.shortcuts import render_to_response, redirect
+from django.shortcuts import render_to_response, redirect,render
 from django.contrib.auth import authenticate, login
 
 
 
 def index(request):
-	return render_to_response('index.html')
+	return render(request, 'mytodolist.html', {'todo' : 'nimic'})	
 	
 
 def login(request):
