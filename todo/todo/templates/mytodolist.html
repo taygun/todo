@@ -7,4 +7,12 @@
   <header>
       <h1>Hello, sir</h1>
   </header>
+	<ul>
+	{% for task in Tasks %}
+	<li>{{ task }}</li>
+	{% endfor %}
+	</ul>
+
+	<br>
+	<br>
 {% endblock %}
